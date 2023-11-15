@@ -10,4 +10,4 @@
 ---
 
 #### Ссылка на сайт
-[nice-dev.ru]('https://nice-dev.ru/')
+[nice-dev.ru](https://nice-dev.ru)
