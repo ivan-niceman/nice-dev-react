@@ -1,0 +1,5 @@
+.popup__form-paragraph {
+  margin: 0;
+  font-size: 18px;
+  font-size: calc(12px + (18 - 12) * (100vw - 768px) / (1920 - 768));
+}

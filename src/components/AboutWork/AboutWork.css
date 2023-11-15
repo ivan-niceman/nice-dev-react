@@ -1,0 +1,87 @@
+.about__our-work {
+  padding: 60px 50px 0;
+}
+
+@media (max-width: 425px) {
+  .about__our-work {
+    padding: 30px 20px 0
+  }
+}
+
+.about__specialty {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 30px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 80px 0 0;
+}
+
+@media (max-width: 768px) {
+  .about__specialty {
+    display: none;
+  }
+}
+
+.about__speciality-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 15px 30px;
+  background-color: #fbb42c;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.about__speciality-paragraph {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 0 0;
+}
+
+@media (max-width: 425px) {
+  .about__speciality-paragraph {
+    font-size: 15px;
+    line-height: normal
+  }
+}
+
+.about__specialty-carousel {
+  display: none;
+  max-width: 600px;
+  min-height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .about__specialty-carousel {
+    display: block;
+  }
+}
+
+.about__specialty-card {
+  border: none;
+  margin: 0 15px;
+}
+
+.about__specialty-carousel .carousel-button:first-of-type {
+  transform: translate(100%, 120px);
+}
+
+@media (max-width: 768px) {
+  .about__specialty-carousel .carousel-button:first-of-type {
+    transform: translate(100%, 60px)
+  }
+}
+
+.about__specialty-carousel .carousel-button:last-of-type {
+  transform: translate(-100%, 120px);
+}
+
+@media (max-width:768px) {
+  .about__specialty-carousel .carousel-button:last-of-type {
+    transform: translate(-100%, 60px)
+  }
+}

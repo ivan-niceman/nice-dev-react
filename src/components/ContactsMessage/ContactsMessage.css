@@ -1,0 +1,48 @@
+.contacts__block {
+  display: none;
+  opacity: 0;
+  backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+}
+.contacts__massage {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #760592, #fbb42c);
+  box-shadow: 0 0 20px #760592;
+  height: 50vh;
+  width: 50vw;
+  min-width: 300px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 110;
+  margin: auto;
+}
+
+.active-form {
+  display: flex;
+  opacity: 1;
+}
+
+.contacts__massage img {
+  width: calc((100vw - 320px) / (1280 - 320) * (90 - 60) + 60px);
+}
+
+.contacts__info {
+  font-size: 32px;
+  font-size: calc((100vw - 320px) / (1280 - 320) * (40 - 16) + 16px) !important;
+  color: #fff;
+}
