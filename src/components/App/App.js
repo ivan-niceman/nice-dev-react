@@ -1,33 +1,38 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
-import Popup from "../Popup/Popup";
 import Privacy from "../Privacy/Privacy";
 import ScrollUp from "../ScrollUp/ScrollUp";
 import ContactsMessage from "../ContactsMessage/ContactsMessage";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Routes>
         <Route
-          path="/"
+          path="*"
           element={
             <>
               <Header />
               <Main />
               <Footer />
-              <Popup />
               <ScrollUp />
               <ContactsMessage />
             </>
           }
         />
-        <Route path="/privacy" element={<Privacy />} />
+        <Route
+          path="/privacy"
+          element={
+            <>
+              <Privacy />
+              <ScrollUp />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
 }
-
-export default App;

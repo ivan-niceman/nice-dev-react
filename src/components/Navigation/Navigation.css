@@ -14,11 +14,11 @@
   justify-content: space-evenly;
 }
 
-.menu__item {
+.menu-item {
   position: relative;
 }
 
-.menu__item:after {
+.menu-item:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -34,7 +34,7 @@
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.menu__item:hover::after {
+.menu-item:hover::after {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -57,7 +57,7 @@
   color: #760592;
 }
 
-.contacts__list {
+.contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,34 +67,34 @@
   min-width: 150px;
 }
 
-.contacts__link {
+.contacts-link {
   display: block;
   width: 25px;
   height: 25px;
 }
 
-.contacts__item:first-child .contacts__link {
+.contacts-item:first-child .contacts-link {
   background: url(../../images/icons/telegram.svg) center no-repeat;
   background-size: contain;
 }
 
-.contacts__item:nth-child(2) .contacts__link {
+.contacts-item:nth-child(2) .contacts-link {
   background: url(../../images/icons/whatsapp.svg) center no-repeat;
   background-size: contain;
 }
 
-.contacts__item:last-child .contacts__link {
+.contacts-item:last-child .contacts-link {
   background: url(../../images/icons/email.svg) center no-repeat;
   background-size: contain;
   width: 30px;
 }
 
-.mobile__nav {
+.mobile-nav {
   display: none;
 }
 
 @media (max-width: 991px) {
-  .mobile__nav {
+  .mobile-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,7 +104,7 @@
   }
 }
 
-.burger__menu {
+.burger-menu {
   width: auto;
   margin: 0;
   padding: 0;
@@ -163,7 +163,7 @@
   transition: 0.3s;
 }
 
-.mobile__menu {
+.mobile-menu {
   background: #f5f5f5;
   min-width: 250px;
   height: 100%;
@@ -182,7 +182,7 @@
   cursor: auto;
 }
 
-.mobile__menu-section {
+.mobile-menu-section {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -198,7 +198,7 @@
   transition: visibility 0.3s, opacity 0.3s linear;
 }
 
-.mobile__menu_visible {
+.mobile-menu_visible {
   visibility: visible;
   -webkit-transform: none;
   -ms-transform: none;
@@ -249,18 +249,18 @@
   padding: 20px;
 }
 
-.mobile__list {
+.mobile-list {
   text-align: center;
 }
 
-.mobile__item {
+.mobile-item {
   font-size: 18px;
   line-height: 43px;
   letter-spacing: 1px;
   width: 100%;
 }
 
-.mobile__item::before {
+.mobile-item::before {
   content: "";
   display: block;
   width: 100%;
@@ -268,7 +268,7 @@
   background: #c2abab;
 }
 
-.mobile__item:last-child:after {
+.mobile-item:last-child:after {
   content: "";
   display: block;
   width: 100%;
@@ -276,16 +276,16 @@
   background: #c2abab;
 }
 
-.mobile__link {
+.mobile-link {
   position: relative;
   color: #000;
 }
 
-.mobile__link:hover {
+.mobile-link:hover {
   color: inherit;
 }
 
-.mobile__link::before {
+.mobile-link::before {
   content: "";
   display: inline-block;
   background: url(../../images/logo/logo-link.png) center no-repeat;
@@ -300,7 +300,7 @@
   transform: translateY(-50%);
 }
 
-.mobile-contacts__list {
+.mobile-contacts-list {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;

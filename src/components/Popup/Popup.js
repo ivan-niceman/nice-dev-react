@@ -1,12 +1,12 @@
 import "./Popup.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
 export default function Popup({ isOpen, onClose }) {
-  function closePopup() {
+  const closePopup = useCallback(() => {
     onClose();
-  }
-  
+  }, [onClose]);
+
   useEffect(() => {
     const handleOverlayClick = (event) => {
       if (isOpen && event.target.classList.contains("popup_opened")) {
@@ -75,12 +75,12 @@ export default function Popup({ isOpen, onClose }) {
           >
             Отправить
           </button>
-            <p className="popup__form-paragraph">
-              Отправляя сообщение вы соглашаетесь на&nbsp;
-              <Link to="/privacy" className="privacy__popup" target="_blank">
-                обработку персональных данных
-              </Link>
-            </p>
+          <p className="popup__form-paragraph">
+            Отправляя сообщение вы соглашаетесь на&nbsp;
+            <Link to="/privacy" className="privacy-popup">
+              обработку персональных данных
+            </Link>
+          </p>
         </form>
       </div>
     </section>

@@ -1,12 +1,13 @@
-import "./Header.css";
+import React from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
+import "./Header.css";
 
 export default function Header() {
   return (
     <header className="header">
-      <span className="header__section_white"></span>
-      <span className="header__section_yellow"></span>
+      <span className="header__section-white"></span>
+      <span className="header__section-yellow"></span>
       <Navigation />
       <section className="header__titles">
         <h1 className="header__title-left">
@@ -25,10 +26,7 @@ export default function Header() {
         <span className="header__image"></span>
         <section className="header__section-form">
           <h2 className="header__form-title">бесплатная консультация</h2>
-          <form
-            id="form-header"
-            className="header__form"
-          >
+          <form id="form-header" className="header__form">
             <input
               type="text"
               name="name"
@@ -51,12 +49,13 @@ export default function Header() {
               required
             ></textarea>
             <div className="header__form-submit">
-            <button type="submit" className="form-btn">
-              Отправить
-            </button>
+              <button type="submit" className="form-btn">
+                Отправить
+              </button>
               <p className="header__form-paragraph">
                 Отправляя сообщение вы соглашаетесь на&nbsp;
-                <Link to="/privacy" className="privacy" target="_blank">обработку персональных данных
+                <Link to="/privacy" className="privacy">
+                  обработку персональных данных
                 </Link>
               </p>
             </div>

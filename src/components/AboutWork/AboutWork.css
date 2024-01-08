@@ -1,14 +1,14 @@
-.about__our-work {
+.about-our-work {
   padding: 60px 50px 0;
 }
 
 @media (max-width: 425px) {
-  .about__our-work {
+  .about-our-work {
     padding: 30px 20px 0
   }
 }
 
-.about__specialty {
+.about-specialty {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
@@ -19,12 +19,12 @@
 }
 
 @media (max-width: 768px) {
-  .about__specialty {
+  .about-specialty {
     display: none;
   }
 }
 
-.about__speciality-title {
+.about-specialty-title {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
@@ -34,20 +34,20 @@
   text-align: center;
 }
 
-.about__speciality-paragraph {
+.about-specialty-paragraph {
   font-size: 18px;
   line-height: 21px;
   padding: 20px 0 0;
 }
 
 @media (max-width: 425px) {
-  .about__speciality-paragraph {
+  .about-specialty-paragraph {
     font-size: 15px;
     line-height: normal
   }
 }
 
-.about__specialty-carousel {
+.about-specialty-carousel {
   display: none;
   max-width: 600px;
   min-height: 300px;
@@ -56,32 +56,32 @@
 }
 
 @media (max-width: 768px) {
-  .about__specialty-carousel {
+  .about-specialty-carousel {
     display: block;
   }
 }
 
-.about__specialty-card {
+.about-specialty-card {
   border: none;
   margin: 0 15px;
 }
 
-.about__specialty-carousel .carousel-button:first-of-type {
+.about-specialty-carousel .carousel-button:first-of-type {
   transform: translate(100%, 120px);
 }
 
 @media (max-width: 768px) {
-  .about__specialty-carousel .carousel-button:first-of-type {
+  .about-specialty-carousel .carousel-button:first-of-type {
     transform: translate(100%, 60px)
   }
 }
 
-.about__specialty-carousel .carousel-button:last-of-type {
+.about-specialty-carousel .carousel-button:last-of-type {
   transform: translate(-100%, 120px);
 }
 
 @media (max-width:768px) {
-  .about__specialty-carousel .carousel-button:last-of-type {
+  .about-specialty-carousel .carousel-button:last-of-type {
     transform: translate(-100%, 60px)
   }
 }

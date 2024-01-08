@@ -1,19 +1,20 @@
 import './Portfolio.css';
-import project1 from "../../images/portfolio/soltour.png";
-import project2 from "../../images/portfolio/logos2.png";
-import project3 from "../../images/portfolio/delivery.png";
-import project4 from "../../images/portfolio/marytour.png";
-import project5 from "../../images/portfolio/shop.png";
-import project6 from "../../images/portfolio/hotel.png";
-import project7 from "../../images/portfolio/stali.png";
-import project8 from "../../images/portfolio/logos.png";
-import project9 from "../../images/portfolio/mira-tur.png";
+import project1 from "../../images/portfolio/soltour.webp";
+import project2 from "../../images/portfolio/logos2.webp";
+import project3 from "../../images/portfolio/delivery.webp";
+import project4 from "../../images/portfolio/marytour.webp";
+import project5 from "../../images/portfolio/shop.webp";
+import project6 from "../../images/portfolio/hotel.webp";
+import project7 from "../../images/portfolio/stali.webp";
+import project8 from "../../images/portfolio/logos.webp";
+import project9 from "../../images/portfolio/mira-tur.webp";
+// import project10 from "../../images/portfolio/embassy.webp";
 
 export default function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
         <h2 className="main__title">примеры работ</h2>
-        <section className="work__portfolio">
+        <section>
           <div
             id="carouselExampleInterval2"
             className="carousel slide carousel-fade portfolio__carousel"
@@ -27,8 +28,8 @@ export default function Portfolio() {
                     Создание сайта туристического агентства Солнечный тур.
                     <br />
                     <br />
-                    Цель: сделать современный сайт, который будет давать высокую
-                    конверсию при рекламе в интернете.
+                    Цель: сделать современный сайт, который будет давать высокую конверсию при рекламе в интернете.
+                    {/* Сайт уже активно используется и приносит новых туристов благодаря удобному и приятному интерфейсу. Форма подбора тура привлекает внимание многих посетителей */}
                   </p>
                   <br />
                   <img
@@ -37,9 +38,7 @@ export default function Portfolio() {
                     alt="проект 1"
                   />
                   <p className="portfolio__paragraph">
-                    Заказчица получила сайт, который соответствует всем
-                    современным тенденциям, понятен пользователю и выделяет ее
-                    фирму на фоне конкурентов.
+                    Заказчица получила сайт, который соответствует всем современным тенденциям, понятен пользователю и выделяет ее фирму на фоне конкурентов.
                   </p>
                 </div>
               </li>
@@ -50,8 +49,7 @@ export default function Portfolio() {
                     тур”.
                     <br />
                     <br />
-                    Задача: создать логотип, который бы ассоциировался с
-                    радостью и отдыхом.
+                    Задача: создать логотип, который бы ассоциировался с радостью и отдыхом.
                   </p>
                   <br />
                   <img
@@ -60,16 +58,15 @@ export default function Portfolio() {
                     alt="проект 2"
                   />
                   <p className="portfolio__paragraph">
-                    Реализована задумка с солнцем и морем на логотипе. Логотип
-                    отражает название и ассоциируется с отдыхом.
+                    Реализована задумка с солнцем и морем на логотипе. Логотип отражает название и ассоциируется с отдыхом.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
-                    Редизайн сайта по доставке готовых обедов в офисы, на
-                    стройплощадки и выездные мероприятия.
+                    Редизайн сайта по доставке готовых обедов в офисы, на стройплощадки и выездные мероприятия.
+                    {/* Сайт показывает высокое качество блюд , доступность доставки и удобство использования. Благодаря этому заказчик получит много новых крупных клиентов среди более высокого ценового сегмента. */}
                     <br />
                     <br />
                     Цель: современный дизайн и понятная навигация.
@@ -81,17 +78,14 @@ export default function Portfolio() {
                     alt="проект 3"
                   />
                   <p className="portfolio__paragraph">
-                    Заказчик по итогу получил современный сайт, который будет
-                    показывать уровень качества продукции и понятен всем
-                    клиентам заказчика.
+                    Заказчик по итогу получил современный сайт, который будет показывать уровень качества продукции и понятен всем клиентам заказчика.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
-                    Сайт туристического агентства Москва, работающего с 2000
-                    года.
+                    Сайт туристического агентства Москва, работающего с 2000 года.
                     <br />
                     <br />
                     Задача: реализовать современный дизайн и функционал.
@@ -103,21 +97,18 @@ export default function Portfolio() {
                     alt="проект 4"
                   />
                   <p className="portfolio__paragraph">
-                    Реализована система поиска туров с перелетами, поиск круизов
-                    и автобусных туров. Сайт сделан в современном дизайне с
-                    использованием анимации и интерактивных ссылок.
+                    Реализована система поиска туров с перелетами, поиск круизов и автобусных туров. Сайт сделан в современном дизайне с использованием анимации и интерактивных ссылок.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
-                    Сайт фирмы, которая продает мобильные аксессуары и
-                    компьютерную технику.
+                    Сайт фирмы, которая продает мобильные аксессуары и компьютерную технику.
+                    {/* Сайт хорошо приносит покупателей из поисковых систем , которые сразу находят нужный товар благодаря простоте функционала и удобному дизайну. */}
                     <br />
                     <br />
-                    Задача: создать ультра-современный сайт для целевой
-                    аудитории 18-30 лет.
+                    Задача: создать ультра-современный сайт для целевой аудитории 18-30 лет.
                   </p>
                   <br />
                   <img
@@ -126,16 +117,14 @@ export default function Portfolio() {
                     alt="проект 5"
                   />
                   <p className="portfolio__paragraph">
-                    Сайт сделан с учетом маркетингового анализа, с понятным УТП,
-                    структура сайта ведет клиента по всей воронке продаж.
+                    Сайт сделан с учетом маркетингового анализа, с понятным УТП, структура сайта ведет клиента по всей воронке продаж.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
-                    Сайт для нового туристического агентства,
-                    специализирующегося на продаже горящих туров.
+                    Сайт для нового туристического агентства, специализирующегося на продаже горящих туров.
                     <br />
                     <br />
                     Задача: создать сайт, который поможет завоевать рынок.
@@ -147,21 +136,17 @@ export default function Portfolio() {
                     alt="проект 6"
                   />
                   <p className="portfolio__paragraph">
-                    Реализовано несколько форм обратной связи для удобства
-                    туристов. А также яркие графические решения для легкой
-                    навигации по сайту.
+                    Реализовано несколько форм обратной связи для удобства туристов. А также яркие графические решения для легкой навигации по сайту.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
-                    Сайт производственной компании, работающей с изделиями из
-                    стали.
+                    Сайт производственной компании, работающей с изделиями из стали.
                     <br />
                     <br />
-                    Цель: сделать продающий сайт, демонстрирующий весь
-                    ассортимент.
+                    Цель: сделать продающий сайт, демонстрирующий весь ассортимент.
                   </p>
                   <br />
                   <img
@@ -170,17 +155,14 @@ export default function Portfolio() {
                     alt="проект 7"
                   />
                   <p className="portfolio__paragraph">
-                    Современный интерактивный фотоальбом позволяет увидеть
-                    большинство готовых изделий. Также на каждой странице
-                    реализован фирменный стиль компании.
+                    Современный интерактивный фотоальбом позволяет увидеть большинство готовых изделий. Также на каждой странице реализован фирменный стиль компании.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
-                    Разработка логотипа для магазина, который занимается
-                    продажей продуктов из разных уголков мира.
+                    Разработка логотипа для магазина, который занимается продажей продуктов из разных уголков мира.
                   </p>
                   <br />
                   <img
@@ -189,12 +171,30 @@ export default function Portfolio() {
                     alt="проект 8"
                   />
                   <p className="portfolio__paragraph">
-                    Создано много вариантов логотипа, который ассоциируется
-                    одновременно с едой, планетой и путешествиями.
+                    Создано много вариантов логотипа, который ассоциируется одновременно с едой, планетой и путешествиями.
                   </p>
                 </div>
               </li>
               <li className="carousel-item portfolio__item">
+                <div className="card portfolio__card">
+                  <p className="portfolio__paragraph">
+                    Создание сайта для туристического агентства "МИРА"
+                    <br />
+                    <br />
+                    Цель: создать сайт, который позволит поднять количество продаж, будет легко продвигаться в поисковых системах, иметь высокую конверсию лидов.
+                  </p>
+                  <br />
+                  <img
+                    src={project9}
+                    className="card-img-top portfolio__image"
+                    alt="проект 9"
+                  />
+                  <p className="portfolio__paragraph">
+                    Заказчица получила сайт, где используется несколько поисковых модулей под разные запросы посетителя. А также большое количество форм для обратной связи с менеджерами, поскольку одна из сильных сторон фирмы - высокая квалификация сотрудников и постоянная поддержка туристов.
+                  </p>
+                </div>
+              </li>
+              {/* <li className="carousel-item portfolio__item">
                 <div className="card portfolio__card">
                   <p className="portfolio__paragraph">
                     Создание сайта для туристического агентства "МИРА"
@@ -206,9 +206,9 @@ export default function Portfolio() {
                   </p>
                   <br />
                   <img
-                    src={project9}
+                    src={project10}
                     className="card-img-top portfolio__image"
-                    alt="проект 9"
+                    alt="проект 10"
                   />
                   <p className="portfolio__paragraph">
                     Заказчица получила сайт, где используется несколько
@@ -218,7 +218,7 @@ export default function Portfolio() {
                     квалификация сотрудников и постоянная поддержка туристов.
                   </p>
                 </div>
-              </li>
+              </li> */}
             </ul>
             <a
               className="carousel-control-prev carousel-button carousel-button-left portfolio__carousel-button portfolio__carousel-button-left"
@@ -226,7 +226,7 @@ export default function Portfolio() {
               role="button"
               data-slide="prev"
             >
-              <span className="material-symbols-outlined arrow__left">
+              <span className="material-symbols-outlined">
                 arrow_left_alt
               </span>
             </a>
@@ -236,7 +236,7 @@ export default function Portfolio() {
               role="button"
               data-slide="next"
             >
-              <span className="material-symbols-outlined arrow__right">
+              <span className="material-symbols-outlined">
                 arrow_right_alt
               </span>
             </a>

@@ -8,13 +8,13 @@ $(document).ready(function () {
       url: "./php/send-form-header.php",
       data: $(this).serialize(),
     }).done(function () {
-      $(".contacts__block")
+      $(".contacts-block")
         .addClass("active-form")
         .hide()
         .fadeIn();
       setTimeout(function () {
         jQuery("#form-header").trigger("reset");
-        $(".contacts__block").removeClass("active-form").fadeOut();
+        $(".contacts-block").removeClass("active-form").fadeOut();
       }, 2000);
     });
     return false;
@@ -31,13 +31,13 @@ $(document).ready(function () {
       url: "./php/form-popup.php",
       data: $(this).serialize(),
     }).done(function () {
-      $(".contacts__block")
+      $(".contacts-block")
         .addClass("active-form")
         .hide()
         .fadeIn();
       setTimeout(function () {
         jQuery("#form-popup").trigger("reset");
-        $(".contacts__block").removeClass("active-form").fadeOut();
+        $(".contacts-block").removeClass("active-form").fadeOut();
         $(".popup").removeClass("popup_opened");
       }, 2000);
     });

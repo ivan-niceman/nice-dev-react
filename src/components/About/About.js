@@ -1,7 +1,7 @@
 import './About.css';
-import partner1 from "../../images/partners/partner1.jpg";
-import partner2 from "../../images/partners/partner2.jpg";
-import partner3 from "../../images/partners/partner3.jpg";
+import partner1 from "../../images/partners/partner1.webp";
+import partner2 from "../../images/partners/partner2.webp";
+import partner3 from "../../images/partners/partner3.webp";
 
 export default function About() {
   return (
@@ -51,8 +51,7 @@ export default function About() {
                     <h3 className="about__card-name">Наталья</h3>
                     <p className="about__card-text">
                       Имею большой опыт работы не только в создании визуала, но
-                      также в маркетинге и туризме. Поэтому точно знаю как
-                      сделать так, чтобы турагенты и туристы были довольны
+                      также в маркетинге и туризме.
                     </p>
                   </div>
                 </div>
@@ -87,7 +86,7 @@ export default function About() {
                     <h3 className="about__card-name">Иван</h3>
                     <p className="about__card-text">
                       Качественно и внимательно напишу ваш сайт с учётом всех
-                      новинок мира web-разработки
+                      новинок мира web-разработки.
                     </p>
                   </div>
                 </div>
@@ -99,7 +98,7 @@ export default function About() {
               role="button"
               data-slide="prev"
             >
-              <span className="material-symbols-outlined arrow__left">
+              <span className="material-symbols-outlined">
                 arrow_left_alt
               </span>
             </a>
@@ -109,7 +108,7 @@ export default function About() {
               role="button"
               data-slide="next"
             >
-              <span className="material-symbols-outlined arrow__right">
+              <span className="material-symbols-outlined">
                 arrow_right_alt
               </span>
             </a>

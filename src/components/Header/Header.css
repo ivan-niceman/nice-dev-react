@@ -28,7 +28,7 @@
   min-height: fit-content;
 }
 
-.header__section_white {
+.header__section-white {
   position: absolute;
   left: 0;
   top: 0;
@@ -38,7 +38,7 @@
   z-index: -1;
 }
 
-.header__section_yellow {
+.header__section-yellow {
   position: absolute;
   top: 0;
   right: 0;
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 768px) {
-  .header__section_yellow {
+  .header__section-yellow {
     width: 100%;
   }
 }
@@ -175,7 +175,7 @@
 }
 
 .header__image {
-  background: url(../../images/photo.jpg) left no-repeat;
+  background: url(../../images/photo.webp) left no-repeat;
   background-size: cover;
   width: 100%;
   max-width: 987px;

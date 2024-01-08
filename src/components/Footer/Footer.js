@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
@@ -33,15 +32,15 @@ export default function Footer() {
             </HashLink>
           </li>
         </ul>
-        <ul className="contacts__list">
-          <li className="contacts__item">
-            <Link to="https://telegram.im/@NataChoco" className="contacts__link" target="_blank" rel="noreferrer" />
+        <ul className="contacts-list">
+          <li className="contacts-item">
+            <a href="https://telegram.im/@NataChoco" className="contacts-link" target="_blank" rel="noreferrer"/>
           </li>
-          <li className="contacts__item">
-            <Link to="https://wa.me/+79775784438" className="contacts__link" target="_blank" />
+          <li className="contacts-item">
+            <a href="https://wa.me/+79775784438" className="contacts-link" target="_blank" rel="noreferrer"/>
           </li>
-          <li className="contacts__item">
-            <Link to="mailto:nice-dev@list.ru" className="contacts__link" target="_blank" />
+          <li className="contacts-item">
+            <a href="mailto:nice-dev@list.ru" className="contacts-link" target="_blank" rel="noreferrer"/>
           </li>
         </ul>
       </div>

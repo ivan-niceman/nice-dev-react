@@ -94,23 +94,23 @@
 }
 
 @media (max-width: 480px) {
-  .footer .contacts__list {
+  .footer .contacts-list {
     order: 1;
     margin: 0 0 30px;
   }
 }
 
-.footer .contacts__item:first-child .contacts__link {
+.footer .contacts-item:first-child .contacts-link {
   background: url(../../images/icons/telegram-white.svg) center no-repeat;
   background-size: contain;
 }
 
-.footer .contacts__item:nth-child(2) .contacts__link {
+.footer .contacts-item:nth-child(2) .contacts-link {
   background: url(../../images/icons/whatsapp-white.svg) center no-repeat;
   background-size: contain;
 }
 
-.footer .contacts__item:last-child .contacts__link {
+.footer .contacts-item:last-child .contacts-link {
   background: url(../../images/icons/email-white.svg) center no-repeat;
   background-size: contain;
 }

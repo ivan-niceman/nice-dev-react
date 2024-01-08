@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "../../images/logo/logo.png";
 import "./Navigation.css";
@@ -22,17 +21,18 @@ export default function Navigation() {
           <img src={logo} alt="логотип" />
         </HashLink>
         <ul className="navbar-nav me-auto mb-lg-0 navbar-nav-scroll header__menu">
-          <li className="nav-item menu__item">
+          <li className="nav-item menu-item">
             <HashLink
               smooth
               className="nav-link active header__menu-text"
               aria-current="page"
               to="#about"
+              replace
             >
               о нас
             </HashLink>
           </li>
-          <li className="nav-item menu__item">
+          <li className="nav-item menu-item">
             <HashLink
               smooth
               className="nav-link active header__menu-text"
@@ -42,7 +42,7 @@ export default function Navigation() {
               услуги
             </HashLink>
           </li>
-          <li className="nav-item menu__item">
+          <li className="nav-item menu-item">
             <HashLink
               smooth
               className="nav-link active header__menu-text"
@@ -52,7 +52,7 @@ export default function Navigation() {
               цены
             </HashLink>
           </li>
-          <li className="nav-item menu__item">
+          <li className="nav-item menu-item">
             <HashLink
               smooth
               className="nav-link active header__menu-text"
@@ -63,38 +63,41 @@ export default function Navigation() {
             </HashLink>
           </li>
         </ul>
-        <ul className="contacts__list">
-          <li className="contacts__item">
-            <Link
-              to="https://telegram.im/@NataChoco"
-              className="contacts__link"
+        <ul className="contacts-list">
+          <li className="contacts-item">
+            <a
+              href="https://telegram.im/@NataChoco"
+              className="contacts-link"
               target="_blank"
-            ></Link>
+              rel="noreferrer"
+            ></a>
           </li>
-          <li className="contacts__item">
-            <Link
-              to="https://wa.me/+79775784438"
-              className="contacts__link"
+          <li className="contacts-item">
+            <a
+              href="https://wa.me/+79775784438"
+              className="contacts-link"
               target="_blank"
-            ></Link>
+              rel="noreferrer"
+            ></a>
           </li>
-          <li className="contacts__item">
-            <Link
-              to="mailto:nice-dev@list.ru"
-              className="contacts__link"
+          <li className="contacts-item">
+            <a
+              href="mailto:nice-dev@list.ru"
+              className="contacts-link"
               target="_blank"
-            ></Link>
+              rel="noreferrer"
+            ></a>
           </li>
         </ul>
       </nav>
 
-      <nav className="mobile__nav">
+      <nav className="mobile-nav">
         <HashLink smooth className="navbar-brand p-0 header__logo" to="/">
           <img src={logo} alt="логотип" width="130" height="50" />
         </HashLink>
-        <div className="container-fluid burger__menu">
+        <div className="container-fluid burger-menu">
           <button
-            className="navbar-toggler menu__burger_button"
+            className="navbar-toggler"
             type="button"
             onClick={toggleMobileMenu}
           >
@@ -102,8 +105,8 @@ export default function Navigation() {
           </button>
         </div>
         <div
-          className={`mobile__menu ${
-            isMobileMenuOpen ? "mobile__menu_visible" : ""
+          className={`mobile-menu ${
+            isMobileMenuOpen ? "mobile-menu_visible" : ""
           }`}
         >
           <div className="offcanvas-header">
@@ -117,35 +120,35 @@ export default function Navigation() {
             </button>
           </div>
           <div className="offcanvas-body">
-            <ul className="navbar-nav flex-grow-1 mobile__list">
-              <li className="nav-item mobile__item">
+            <ul className="navbar-nav flex-grow-1 mobile-list">
+              <li className="nav-item mobile-item">
                 <HashLink
                   smooth
-                  className="nav-link mobile__link"
+                  className="nav-link mobile-link"
                   aria-current="page"
                   to="#about"
                 >
                   о нас
                 </HashLink>
               </li>
-              <li className="nav-item mobile__item">
+              <li className="nav-item mobile-item">
                 <HashLink
                   smooth
-                  className="nav-link mobile__link"
+                  className="nav-link mobile-link"
                   to="#services"
                 >
                   услуги
                 </HashLink>
               </li>
-              <li className="nav-item mobile__item">
-                <HashLink smooth className="nav-link mobile__link" to="#price">
+              <li className="nav-item mobile-item">
+                <HashLink smooth className="nav-link mobile-link" to="#price">
                   цены
                 </HashLink>
               </li>
-              <li className="nav-item mobile__item">
+              <li className="nav-item mobile-item">
                 <HashLink
                   smooth
-                  className="nav-link mobile__link"
+                  className="nav-link mobile-link"
                   to="#portfolio"
                 >
                   портфолио
@@ -153,33 +156,33 @@ export default function Navigation() {
               </li>
             </ul>
           </div>
-          <ul className="contacts__list mobile-contacts__list">
-            <li className="contacts__item">
-              <Link
-                to="https://telegram.im/@NataChoco"
-                className="contacts__link"
+          <ul className="contacts-list mobile-contacts-list">
+            <li className="contacts-item">
+              <a
+                href="https://telegram.im/@NataChoco"
+                className="contacts-link"
                 target="_blank"
-              ></Link>
+              ></a>
             </li>
-            <li className="contacts__item">
-              <Link
-                to="https://wa.me/+79775784438"
-                className="contacts__link"
+            <li className="contacts-item">
+              <a
+                href="https://wa.me/+79775784438"
+                className="contacts-link"
                 target="_blank"
-              ></Link>
+              ></a>
             </li>
-            <li className="contacts__item">
-              <Link
-                to="mailto:nice-dev@list.ru"
-                className="contacts__link"
+            <li className="contacts-item">
+              <a
+                href="mailto:nice-dev@list.ru"
+                className="contacts-link"
                 target="_blank"
-              ></Link>
+              ></a>
             </li>
           </ul>
         </div>
         <div
-          className={`mobile__menu-section ${
-            isMobileMenuOpen ? "mobile__menu_visible" : ""
+          className={`mobile-menu-section ${
+            isMobileMenuOpen ? "mobile-menu_visible" : ""
           }`}
           onClick={closeMobileMenu}
         />

@@ -16,9 +16,9 @@ export default function Questions() {
   return (
     <section className="questions">
         <h2 className="main__title">Часто задаваемые вопросы</h2>
-        <section className="section__questions">
-          <section className="question__section-left">
-            <div className="block__questions">
+        <section className="section-questions">
+          <section className="question-section-left">
+            <div>
               <ul className="accordion" id="accordionExample">
                 <li className="card accordion-item">
                   <h2 className="card-header">
@@ -158,8 +158,8 @@ export default function Questions() {
               </ul>
             </div>
           </section>
-          <section className="question__section-right">
-            <button type="button" className="question__button" onClick={togglePopup}>
+          <section className="question-section-right">
+            <button type="button" className="question-button" onClick={togglePopup}>
               Хотите
               <br />
               посотрудничать?
