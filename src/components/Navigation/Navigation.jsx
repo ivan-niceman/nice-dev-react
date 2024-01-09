@@ -70,7 +70,7 @@ export default function Navigation() {
               className="contacts-link"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            > </a>
           </li>
           <li className="contacts-item">
             <a
@@ -78,7 +78,7 @@ export default function Navigation() {
               className="contacts-link"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            > </a>
           </li>
           <li className="contacts-item">
             <a
@@ -86,7 +86,7 @@ export default function Navigation() {
               className="contacts-link"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            > </a>
           </li>
         </ul>
       </nav>
@@ -162,21 +162,24 @@ export default function Navigation() {
                 href="https://telegram.im/@NataChoco"
                 className="contacts-link"
                 target="_blank"
-              ></a>
+                rel="noreferrer"
+              > </a>
             </li>
             <li className="contacts-item">
               <a
                 href="https://wa.me/+79775784438"
                 className="contacts-link"
                 target="_blank"
-              ></a>
+                rel="noreferrer"
+              > </a>
             </li>
             <li className="contacts-item">
               <a
                 href="mailto:nice-dev@list.ru"
                 className="contacts-link"
                 target="_blank"
-              ></a>
+                rel="noreferrer"
+              > </a>
             </li>
           </ul>
         </div>

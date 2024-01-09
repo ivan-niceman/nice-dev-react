@@ -34,13 +34,13 @@ export default function Footer() {
         </ul>
         <ul className="contacts-list">
           <li className="contacts-item">
-            <a href="https://telegram.im/@NataChoco" className="contacts-link" target="_blank" rel="noreferrer"/>
+            <a href="https://telegram.im/@NataChoco" className="contacts-link" target="_blank" rel="noreferrer"> </a>
           </li>
           <li className="contacts-item">
-            <a href="https://wa.me/+79775784438" className="contacts-link" target="_blank" rel="noreferrer"/>
+            <a href="https://wa.me/+79775784438" className="contacts-link" target="_blank" rel="noreferrer"> </a>
           </li>
           <li className="contacts-item">
-            <a href="mailto:nice-dev@list.ru" className="contacts-link" target="_blank" rel="noreferrer"/>
+            <a href="mailto:nice-dev@list.ru" className="contacts-link" target="_blank" rel="noreferrer"> </a>
           </li>
         </ul>
       </div>
