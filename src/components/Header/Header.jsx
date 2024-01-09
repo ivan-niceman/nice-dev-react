@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
+import { buttonAnimation } from "../../utils/buttonAnimation";
 import "./Header.css";
 
 export default function Header() {
+  useEffect(() => {
+    buttonAnimation(".form-btn", ".container-button");
+  }, []);
+
   return (
     <header className="header">
       <span className="header__section-white"></span>
@@ -50,7 +55,8 @@ export default function Header() {
             ></textarea>
             <div className="header__form-submit">
               <button type="submit" className="form-btn">
-                Отправить
+                <span className="container-button"></span>
+                <span>Отправить</span>
               </button>
               <p className="header__form-paragraph">
                 Отправляя сообщение вы соглашаетесь на&nbsp;

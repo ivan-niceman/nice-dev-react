@@ -34,7 +34,7 @@
 }
 
 .questions__paragraph {
-  padding: 0;
+  padding-bottom: 5px;
 }
 
 @media (max-width: 425px) {

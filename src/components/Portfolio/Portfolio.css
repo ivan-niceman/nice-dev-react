@@ -79,9 +79,9 @@
   }
 }
 
-.portfolio__carousel .carousel-button {
+/* .portfolio__carousel .carousel-button {
   top: 50%;
-}
+} */
 
 @media (max-width: 425px) {
   .portfolio__carousel .carousel-button {
